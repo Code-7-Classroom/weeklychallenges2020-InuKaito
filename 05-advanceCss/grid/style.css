@@ -1,0 +1,64 @@
+.grid-container {
+    display: grid;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto auto;
+    height: 800px;
+    padding: 10px;
+  }
+  
+  .grid-item1 {
+    background: url("../img/00Riser.jpg") no-repeat;
+    
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item2 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item3 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item4 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item5 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item6 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item7 {
+   
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .grid-item8 {
+
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+  }
