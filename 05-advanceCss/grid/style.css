@@ -7,13 +7,15 @@
   }
   
   .grid-item1 {
-    background: url("../img/00Riser.jpg") no-repeat;
-    
     border: 1px solid black;
     padding: 20px;
     text-align: center;
   }
+  img {
+    height: 200px;
+    width: 250px;
 
+  }
   .grid-item2 {
    
     border: 1px solid black;
