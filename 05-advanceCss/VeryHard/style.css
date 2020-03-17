@@ -1,0 +1,72 @@
+@charset "UTF-8";
+body {
+  background: black;
+}
+
+.column__container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 50px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  height: 800px;
+  padding: 10px;
+}
+
+.column__item {
+  border: 1px solid pink;
+  padding: 20px;
+  text-align: center;
+}
+
+.column__item {
+  border: 2px solid pink;
+  padding: 20px;
+  text-align: center;
+}
+
+.column__item--black {
+  background-color: black;
+}
+
+.column__item--white {
+  background-color: white;
+}
+
+.column__item--black {
+  background-color: black;
+}
+
+img {
+  height: 300px;
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: pink;
+}
+
+h1::before {
+  content: "(ゝ‿ മ)";
+  color: red;
+}
+
+h1::after {
+  content: "(ゝ‿ മ)";
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: pink;
+}
+
+p {
+  color: pink;
+}
+
+.column2 {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */
