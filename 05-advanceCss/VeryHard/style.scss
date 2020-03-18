@@ -1,9 +1,16 @@
+$body: black;
 $colors: black white black;
 $header: pink;
 $text: pink;
 
-body {
-    background: black;
+.body__background {
+
+    @each $color in $body {
+        &--#{$body} {
+          background-color: $body;
+        }
+      }
+    
 }
 
 .column__container {
@@ -13,6 +20,7 @@ body {
     height: 800px;
     padding: 10px;
 }
+
 
 .column__item {
     border: 1px solid pink;
