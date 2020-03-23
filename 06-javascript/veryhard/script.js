@@ -8,24 +8,24 @@ var c = parseInt(prompt('enter your second number'));
 switch (b) {
  case ('+'):
  b=a+c;
- console.log('your answer is : ' + b);
+ alert('your answer is : ' + b);
  break;
 
  case ('-'):
  b=a-c;
- console.log('your answer is : '+b);
+ alert('your answer is : '+b);
  break;
 
  case ('*'):
  b=a*c;
- console.log('your answer is : '+b);
+ alert('your answer is : '+b);
  break;   
 
  case ('/'):
  b=a/c;
- console.log('your answer is : '+b);
+ alert('your answer is : '+b);
  break;
 
  default:
- console.log('you enter incorrect symbol');
+ alert('you enter incorrect symbol');
 }
