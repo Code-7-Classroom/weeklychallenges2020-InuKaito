@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product page of my eCommerce">
+    <link rel="stylesheet" type="text/css" href="./css/product.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Product</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 class="logo"><span class="text-primary">GunPla-Y</span></h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="current" href="product.html">Product</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('Perfect')">Perfect Grade & Price</button>
+        <button class="btn" onclick="filterSelection('Master')">Master Grade & Price</button>
+        <button class="btn" onclick="filterSelection('High')">High Grade & Price</button>
+    </div>
+
+    <main class="filter__container">
+        <div class="filterDiv Perfect">
+            <img src="../img/00Riser.jpg" class="product__img" alt="img">
+            <h3>Trans-am Riser Clear Color Body 1/60 (scale) Perfect Grade</h3>
+            <h4>Price:</h4>
+            <p>$128.16</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <p>Clear exterior parts for enjoying PG Transam Riser as a clear color kit appeared! From "Mobile Suit
+                Gundam 00".</p>
+        </div>
+        <div class="filterDiv Perfect">
+            <img src="../img/Gundamfreedom.jpg" class="product__img" alt="img">
+            <h3>Strike Freedom Gundam 1/60 (scale) Perfect Grade</h3>
+            <h4>Price:</h4>
+            <p>$242.00</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <p>The Strike Freedom Gundam from Gundam Seed Destiny makes its debut into the PG line featuring brand new
+                styling with extreme articulation and unprecedented mechanical detail.</p>
+        </div>
+        <div class="filterDiv Perfect">
+            <img src="../img/AstrayRedFrame.jpg" class="product__img" alt="img">
+            <h3>Gundam Seed Astray Red Frame 1/60 (scale) Perfect Grade</h3>
+            <h4>Price:</h4>
+            <p>$172.45</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <p>Secretly in development for 4 years, the PG Gundam Astray Red Frame makes its big debut.</p>
+        </div>
+        <div class="filterDiv Perfect">
+            <img src="../img/00gundamsevensword.jpg" class="product__img" alt="img">
+            <h3>Gundam Seven Sword/G Gundam 00 1/60 (scale) Perfect Grade</h3>
+            <h4>Price:</h4>
+            <p>$186.88</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <p>Under the supervision of its original designer, Kanetake Ebikawa, the 00 Gundam is re-introduced to the
+                Perfect Grade.</p>
+        </div>
+        <div class="filterDiv Master">
+            <img src="../img/barbatos.jpg" class="product__img" alt="img">
+            <h3>Barbatos Gundam 1/100 (scale) Master Grade</h3>
+            <h4>Price:</h4>
+            <p>$49.92</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <p>The 4th form of Gundam Barbatos from "Gundam Iron-Blooded Orphans" appears in the prestigous Master Grade
+                line!</p>
+        </div>
+        <div class="filterDiv Master">
+            <img src="../img/gundamdynames.jpg" class="product__img" alt="img">
+            <h3>Gundam Dynames 1/100 (scale) Master Grade</h3>
+            <h4>Price:</h4>
+            <p>$42.72</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <P>The long awaited Gundam dynamic from Gundam 00 is finally available as a master grade.</P>
+        </div>
+        <div class="filterDiv Master">
+            <img src="../img/dualgundam.jpg" class="product__img" alt="img">
+            <h3>Dual Gundam 1/100 (scale) Master Grade</h3>
+            <h4>Price:</h4>
+            <p>$56.90</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>The new X-100 frames allow the kit an incredible range of motion, even when it wears the Assault shroud.
+            </P>
+        </div>
+        <div class="filterDiv Master">
+            <img src="../img/gundammk2.jpg" class="product__img" alt="img">
+            <h3>Gundam MK2 1/100 (scale) Master Grade</h3>
+            <h4>Price:</h4>
+            <p>$42.56</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>The Gundam Mk 2 Titans Ver 2.0 from "Zeta Gundam" features styling and engineering found on the
+                previously released larger PG Gundam MK 2.</P>
+        </div>
+        <div class="filterDiv High">
+            <img src="../img/gundamvidar.jpg" class="product__img" alt="img">
+            <h3>Gundam Vidar 1/144 (scale) High Grade</h3>
+            <h4>Price:</h4>
+            <p>$21.47</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>A stylish new mobile suit equipped with a saber is launching from the 2nd season of the popular Iron
+                Blooded Orphans series!</P>
+        </div>
+        <div class="filterDiv High">
+            <img src="../img/char.jpg" class="product__img" alt="img">
+            <h3>Zaku 2 Char Red Comet 1/144 (scale) High Grade</h3>
+            <h4>Price:</h4>
+            <p>$23.72</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>The red Zaku used by Char Aznable as seen in "Gundam the origin" And the original Gundam TV series
+                returns in a new package along with new armaments!</P>
+        </div>
+        <div class="filterDiv High">
+            <img src="../img/rx-79.jpg" class="product__img" alt="img">
+            <h3>RX-79 Ground Type Gundam 1/144 (scale) High Grade</h3>
+            <h4>Price:</h4>
+            <p>$20.00</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, ex?This kit’s armor parts features new
+                designs, recreating the Gundam Ground Type’s iconic asymmetrical chest Unit.</P>
+        </div>
+        <div class="filterDiv High">
+            <img src="../img/shining.jpg" class="product__img" alt="img">
+            <h3>Shining Gundam 1/144 (scale) High Grade</h3>
+            <h4>Price:</h4>
+            <p>$22.79</p>
+            <button class="button" onclick="window.location.href='contact.html';">Buy</button>
+            <h4>Description:</h4>
+            <P>Shining Gundam, the first Gundam for Neo Japan in the Gundam spinoff, Mobile Fighter G Gundam.</P>
+        </div>
+    </main>
+    <footer class="media">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" class="fa fa-facebook ">facebook</a>
+        <a href="https://www.twitter.com/" target="_blank" rel="noopener" class="fa fa-twitter ">twitter</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" class="fa fa-instagram">instagram</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="fa fa-youtube">youtube</a>
+        <p class="copy">Nathan Cha | Copyright @ 2020 | All Rights Reserved.</p>
+    </footer>
+    <script src="./js/product.js"></script>
+</body>
+
+</html>
