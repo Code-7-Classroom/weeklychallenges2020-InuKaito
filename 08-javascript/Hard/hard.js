@@ -1,13 +1,13 @@
-var personInfo = (function (personalData) {
+function personInfo() {
     var pii = {
-        name: 'InuKaito',
+        name: 'Inukaito',
         ssn: '098-76-7890'
     }
-    return public = {
-        getName: function getName() {
-            return pii.name;
-        }
-    };
-})();
-console.log(personInfo.getName());
-
+    function displayName() {
+      console.log(pii.name);
+    }
+    return displayName;
+  }
+  
+  var personData = personInfo();
+  personData();
