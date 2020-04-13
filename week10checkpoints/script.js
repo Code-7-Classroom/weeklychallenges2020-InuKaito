@@ -15,3 +15,11 @@ const callHi = (callback) => {
     callback(name);
 }
 callHi(sayHi);
+
+// const me = {
+//     name: "Nathan Cha",
+//     sayHi:() => {
+//         console.log(`Hello my name is ${me.name}`);
+//     }
+// }
+// me.sayHi();
