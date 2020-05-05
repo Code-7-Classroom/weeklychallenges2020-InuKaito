@@ -4,17 +4,55 @@ let app = express();
 
 let data = require('./public/employees.json');
 
-app.get('/employees', (req, res) =>{
+const bodyParser = require('body-parser');
 
-    if(!data) {
+app.use(bodyParser.urlencoded({ extended: true }))
+
+app.use(express.json());
+
+app.post('/employees', (req, res) => {
+    const employee = {
+        name: req.query.name,
+        id: data.employees.length + 1
+
+    };
+    data.employees.push(employee);
+    res.send(employee)
+});
+
+app.put('/employees/:id', (req, res) => {
+    const upDate = data.employees.find(function (employees) {
+        return parseInt(req.params.id) === employees.id;
+    })
+    if (!upDate) {
+        res.status(404).send("Couldn't find the employee");
+    } else 
+        upDate.name = req.query.name,
+        upDate.department = req.query.department;
+        res.send("Change name and department only")
+});
+
+app.delete('/employees/:id', (req, res) => {
+    const employeeDelete = data.employees.find((employees) => {
+        return parseInt(req.params.id) === employees.id;
+    })
+    if (!employeeDelete) {
+        res.status(404).send("Couldn't find the employees")
+    }
+    const index = data.employees.indexOf(e);
+    data.employees.splice(index, 1);
+    res.send('Deleted');
+});
+
+app.get('/employees', (req, res) => {
+
+    if (!data) {
         res.status(404).send(`Couldnt find the employees`);
     };
 
     res.send(data);
 
 });
-
-
 
 app.get('/employees/:id', (req, res) => {
 
@@ -24,30 +62,13 @@ app.get('/employees/:id', (req, res) => {
         return parseInt(req.params.id) === employee.id;
     });
 
-    if(!eData) {
+    if (!eData) {
         res.status(404).send(`Couldnt find the employee's id please try again`);
     };
 
     res.send(eData);
 
 
-});
-
-app.post("/employees", (req,res) => {
-    const { error } = validEmployee(req.body);
-    if(error){
-        res.status(400).send(error.details[0].message);
-        return;
-    }
-    const employee = {
-        id: data.employees.length + 1,
-        name: req.body.name,
-        salary: req.body.salary,
-        deparment: req.body.deparment
-    };
- 
-    employees.push(employee);
-    res.status(200).send(employees);    
 });
 
 const port = process.env.PORT || 3000;
