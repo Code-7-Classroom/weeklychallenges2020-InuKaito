@@ -4,7 +4,7 @@ class BasicInfo extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="person">
                 <h3>{this.props.name}</h3>
                 <h4>{this.props.number}</h4>
                 <h4>{this.props.birth}</h4>

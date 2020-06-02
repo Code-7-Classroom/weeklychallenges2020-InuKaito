@@ -13,7 +13,9 @@ app.use(express.json());
 app.post('/employees', (req, res) => {
     const employee = {
         name: req.query.name,
-        id: data.employees.length + 1
+        id: data.employees.length + 1,
+        salary: req.query.salary,
+        department: req.query.department
 
     };
     data.employees.push(employee);
@@ -39,7 +41,7 @@ app.delete('/employees/:id', (req, res) => {
     if (!employeeDelete) {
         res.status(404).send("Couldn't find the employees")
     }
-    const index = data.employees.indexOf(e);
+    const index = data.employees.indexOf(employeeDelete);
     data.employees.splice(index, 1);
     res.send('Deleted');
 });

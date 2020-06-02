@@ -29,7 +29,7 @@ class App extends React.Component {
 
     render() {
         return (
-            <div className="person">
+            <div className="people">
                 {this.state.persons.map(person => {
                     return (
                     <BasicInfo name={person.name} number={person.number} birth={person.birth}></BasicInfo>
